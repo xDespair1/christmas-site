@@ -1,0 +1,64 @@
+ {
+    margin 0;
+    padding 0;
+    box-sizing border-box;
+}
+
+body {
+    font-family 'Segoe UI', Arial, sans-serif;
+    background linear-gradient(135deg, #0b3d0b 0%, #a80000 100%);
+    min-height 100vh;
+    display flex;
+    justify-content center;
+    align-items center;
+    color white;
+}
+
+.container {
+    text-align center;
+    padding 40px;
+    background rgba(0, 0, 0, 0.35);
+    border-radius 20px;
+    box-shadow 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size 2.2rem;
+    margin-bottom 20px;
+    text-shadow 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+#message {
+    font-size 1.6rem;
+    min-height 50px;
+    margin 20px 0;
+    color #ffe066;
+    font-weight bold;
+    transition transform 0.2s ease;
+}
+
+#message.animate {
+    transform scale(1.15);
+}
+
+#greetBtn {
+    padding 15px 40px;
+    font-size 1.2rem;
+    font-weight bold;
+    color #a80000;
+    background white;
+    border none;
+    border-radius 50px;
+    cursor pointer;
+    transition all 0.2s ease;
+    box-shadow 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+#greetBtnhover  { background #ffe066; transform translateY(-2px); }
+#greetBtnactive { transform translateY(2px); }
+
+#counter {
+    margin-top 20px;
+    font-size 0.95rem;
+    opacity 0.8;
+}
